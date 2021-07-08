@@ -161,7 +161,7 @@ header{
 .product-links a:hover,
 .company-links a:hover,
 .connect-links a:hover{
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: 600;
 }
 .show-link{
@@ -400,6 +400,7 @@ header{
         border-bottom-left-radius: 80px;
         margin-top: 15rem;
         height: 95vh;
+        display: grid;
     }
     .state-section img{
         width: 120vw;
@@ -409,16 +410,85 @@ header{
         right: 4rem;
     }
     .state-section .state-text{
-        text-align: center;
+        display: initial;
         color: var(--clr-text);
-        right: 23rem;
-        top: 15rem;
-        width: 100%;
+        
+    }
+    .state-text h3{
+        text-align: center;
+        padding-bottom: 1rem;
+        position: relative;
+        bottom: 20rem;
     }
     .state-text p{
+        text-align: center;
         color: var(--clr-text);
         opacity: 70%;
+        width: 100%;
+        position: relative;
+        bottom: 20rem;
     }
+    .free-power-section{
+        background: url('blogr-landing-page-main/images/illustration-laptop-mobile.svg') no-repeat top 80px center;
+        color: var(--clr-body-copy);
+        height: 170vh;
+    }
+    .free-power-text{
+        display: grid;
+        padding-left: 0.3rem;
+        text-align: center;
+        position: relative;
+        left: 2rem;
+        top: 24rem;
+    }
+    .free-power-text div{
+        width: 100%;
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+    }
+    .free-power-text h3{
+        padding-bottom: 2rem;
+    }
+    .free-power-text p{
+        line-height: 2;
+        opacity: 70%;
+        color: #202020; 
+    }
+    .footer-section{
+        background: var(--clr-footer-background);
+        border-top-right-radius: 80px;
+        height: 200vh;
+        display: grid;
+        padding-top: 3rem;
+        color: var(--clr-footer-text);
+    }
+    .footer-section .logo{
+        padding-left: 6rem;
+    }
+    .footer-nav-links{
+        display: grid;
+        position: relative;
+        bottom: 6rem;
+        left: 1rem;
+    }
+    .footer-nav-links li{
+        padding-left: 6rem;
+        padding-top: 1rem;
+    }
+    .footer-product-links,
+    .footer-company-links,
+    .footer-connect-links{
+        padding-top: 1rem;
+    }
+    .footer-product-links li,
+    .footer-company-links li,
+    .footer-connect-links li{
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+    
+    }    
+    
+
 
     
     
