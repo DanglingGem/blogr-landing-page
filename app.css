@@ -338,7 +338,12 @@ header{
     padding-bottom: 1rem;
     opacity: 60%;
 }
-@media screen and (max-width: 375px){
+
+/* Media Query for Mobile Devices*/
+@media only screen and (max-width: 375px){
+
+    /* Header */
+
     .header{
         height: 95vh;
     }
@@ -355,7 +360,7 @@ header{
         display: flex;
         position: relative;
         bottom: 2.2rem;
-        left: 53rem;
+        left: 20rem;
     }
     .info-section h1{
         padding-top: 3rem;
@@ -373,6 +378,9 @@ header{
     .info-section .learn-btn{
         font-size: 14px;
     }
+
+    /* Introductory Section */
+
     .intro-section{
         background: url('blogr-landing-page-main/images/illustration-editor-mobile.svg') no-repeat top 200px center;
         color: var(--clr-body-copy);
@@ -387,13 +395,23 @@ header{
         text-align: center;
         width: 90%;
         padding-top: 0rem;
+        padding-left: 0rem;
     }
     .intro-text h3{
         padding-bottom: 1rem;
     }
     .intro-text p{
-        width: 100%;
+        text-align: center;
+        width: 40vh;
+        padding-left: 0rem;
+        padding-right: 0rem;
     }
+    .intro-robust-section{
+        margin-left: 0rem;
+    }
+
+    /* Stay Section*/
+
     .state-section{
         background: url('blogr-landing-page-main/images/bg-pattern-circles.svg') no-repeat bottom 100px center, hsl(208, 49%, 24%);
         border-top-right-radius: 80px;
@@ -417,8 +435,11 @@ header{
     .state-text h3{
         text-align: center;
         padding-bottom: 1rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
         position: relative;
         bottom: 20rem;
+        width: 100%;
     }
     .state-text p{
         text-align: center;
@@ -454,6 +475,8 @@ header{
         opacity: 70%;
         color: #202020; 
     }
+
+    /* Footer */
     .footer-section{
         background: var(--clr-footer-background);
         border-top-right-radius: 80px;
