@@ -151,7 +151,7 @@ header{
     border-radius: 4px;
     font-size: 14px;
     box-shadow: 0 5px 15px hsl(356, 69%, 40%);
-    display: block;
+    display: none;
 }
 .product-links a,
 .company-links a,
