@@ -151,9 +151,7 @@ header{
     transition: all 0.3s linear;
     transform: translate(-100%);
 }
-.product-links,
-.company-links,
-.connect-links{
+.dropdown{
     background: var(--clr-text);
     transition: all 0.3s linear;
     padding: 1rem;
@@ -162,16 +160,8 @@ header{
     box-shadow: 0 5px 15px hsl(356, 69%, 40%);
     display: none;
 }
-.product-links a,
-.company-links a,
-.connect-links a{
+.dropdown a{
     color: var(--clr-footer-background);
-}
-.product-links a:hover,
-.company-links a:hover,
-.connect-links a:hover{
-    text-decoration: underline;
-    font-weight: 600;
 }
 .show-link{
     height: 3rem;

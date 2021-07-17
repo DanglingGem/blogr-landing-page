@@ -1,17 +1,12 @@
-const navToggle = document.querySelector(".nav-toggle");
-const openArrow = document.querySelector(".link-arrow");
-const productLink = document.querySelector(".product-links");
-const companyLink = document.querySelector(".company-links");
-const connectLink = document.querySelector(".connect-links");
+const hamburger = document.querySelector(".nav-toggle img");
 
-//console.log(openLink);
 
-openArrow.addEventListener("click", function () {
-   if (openArrow.classList.contains("product-links")) {
-       openArrow.classList.remove("product-links");
-   } else {
-       openArrow.classList.add("product-links");
-   }
-   
+btnClickHandler = () => {
+    console.log("working...");
 
-});
+    if (hamburger.classList.contains("change")) {
+        hamburger.classList.toggle("change");
+        hamburger.setAttribute("src", "./images/icon-hamburger.svg");
+        
+    }
+}
