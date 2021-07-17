@@ -60,6 +60,7 @@ a{
 }
 a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 h1,
 h2,
@@ -138,6 +139,10 @@ header{
     position: relative;
     bottom: 33px;
     left: 15rem;
+}
+.nav-links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .nav-links li{
     padding-right: 1.5rem;
