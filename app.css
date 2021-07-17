@@ -147,6 +147,10 @@ header{
 .nav-links li{
     padding-right: 1.5rem;
 }
+.link-arrow{
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+}
 .product-links,
 .company-links,
 .connect-links{
