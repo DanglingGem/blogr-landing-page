@@ -428,9 +428,8 @@ header{
         right: 4rem;
     }
     .state-section .state-text{
-        display: initial;
-        color: var(--clr-text);
-        
+        padding-left: 0rem;
+        text-align: center;
     }
     .state-text h3{
         text-align: center;
@@ -439,15 +438,16 @@ header{
         margin-right: 0rem;
         position: relative;
         bottom: 20rem;
-        width: 100%;
+        width: 50vh;
     }
     .state-text p{
-        text-align: center;
         color: var(--clr-text);
         opacity: 70%;
-        width: 100%;
+        width: 50vh;
         position: relative;
         bottom: 20rem;
+        padding-left: 1rem;
+        text-align: center;
     }
     .free-power-section{
         background: url('blogr-landing-page-main/images/illustration-laptop-mobile.svg') no-repeat top 80px center;
