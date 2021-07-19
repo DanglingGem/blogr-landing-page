@@ -190,6 +190,73 @@ header{
 .nav-toggle{
     display: none
 }
+.mobile-menu{
+    background-color: #fff;
+    position: absolute;
+    overflow: auto;
+    top: 9rem;
+    left: 5%;
+    display: none;
+    transform: translateX(-50%);
+    width: 21rem;
+    border-radius: 0.5rem;
+    padding: 2.5rem 1.625rem;
+    text-align: center;
+    z-index: 3;
+    box-shadow: 10px 20px 30px hsl(356, 69%, 40%);
+}
+.mobile-menu a{
+    color: #25252d;
+    display: block;
+    position: relative;
+    transition: all 300m ease-in-out;
+}
+.mobile-menu a:hover{
+    font-weight: bold;
+}
+.mobile-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.mobile-menu .menu-item{
+    margin-bottom: 2.62rem;
+}
+.mobile-menu .menu-item img{
+    position: absolute;
+    right: 100px;
+    top: 6px;
+}
+.mobile-menu .menu-item:hover .submenu{
+    max-height: 18.75rem;
+}
+.mobile-menu .menu-item:hover img{
+    transform: rotate(180deg);
+}
+.mobile-menu .submenu{
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    background-color: #efeff1;
+    border-radius: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300m ease-in-out
+}
+.mobile-menu .submenu .submenu-item{
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
+}
+.mobile-menu{
+    border-color: #c8c8cb;
+}
+.mobile-menu .menu-login{
+    margin-top: 2.3125rem;
+    margin-bottom: 1.75rem;
+}
+.mobile-menu .sign-btn{
+    background: linear-gradient(to  right, #ff8f70, #ff3d54);
+    color: #fff
+}
 .info-section{
     text-align: center;
 }
@@ -361,10 +428,14 @@ header{
         display: none;
     }
     .nav-toggle{
-        display: flex;
+        display: block;
         position: relative;
         bottom: 2.2rem;
         left: 20rem;
+    }
+    .mobile-active{
+        transform: translate(0);
+        display: block;
     }
     .info-section{
         margin-top: 4rem;
