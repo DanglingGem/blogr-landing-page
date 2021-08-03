@@ -132,8 +132,7 @@ header{
 
 
 nav{
-    background: transparent;
-    padding-top: 3rem; 
+    background: transparent; 
     height: 40px;
     width: 100%;
     display: flex;
@@ -175,11 +174,12 @@ nav{
 }
 .nav-login-sign-section ul{
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     
 }
 .nav-login-sign-section li{
-    padding-right: 4rem;
+    /*padding-right: 4rem;*/
 }
 .nav-login-sign-section .sign-btn{
     background-color: var(--clr-text);
