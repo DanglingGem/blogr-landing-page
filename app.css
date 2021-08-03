@@ -126,19 +126,26 @@ REVIEWS
 header{
     background: url('blogr-landing-page-main/images/bg-pattern-intro.svg') no-repeat center center, linear-gradient(50deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 80px;
-    padding-top: 3rem; 
     height: 80vh;
 }
+
+
+
+nav{
+    background: transparent;
+    padding-top: 3rem; 
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .logo{
-    padding-top: 2rem;
     padding-left: 4rem;
 }
 .nav-links{
     display: flex;
     justify-content: stretch;
-    position: relative;
-    bottom: 33px;
-    left: 15rem;
 }
 .nav-links a:hover{
     cursor: pointer;
@@ -157,8 +164,8 @@ header{
     padding: 1rem;
     border-radius: 4px;
     font-size: 14px;
-    box-shadow: 0 5px 15px hsl(356, 69%, 40%);
-    display: none;
+    box-shadow: 0 5px 15px #fa6c75;
+    /*display: none;*/
 }
 .dropdown a{
     color: var(--clr-footer-background);
@@ -169,8 +176,7 @@ header{
 .nav-login-sign-section ul{
     display: flex;
     justify-content: flex-end;
-    position: relative;
-    bottom: 57px;
+    
 }
 .nav-login-sign-section li{
     padding-right: 4rem;
@@ -179,8 +185,6 @@ header{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
     font-weight: 400;
-    position: relative;
-    bottom: 10px;
 }
 .nav-login-sign-section .sign-btn:hover{
     background-color: var(--clr-cta-hover-background);
@@ -255,9 +259,10 @@ header{
 }
 .mobile-menu .sign-btn{
     background: linear-gradient(to  right, #ff8f70, #ff3d54);
-    color: #fff
+    color: #fff;
 }
 .info-section{
+    margin-top: 7rem;
     text-align: center;
 }
 .info-section p{
