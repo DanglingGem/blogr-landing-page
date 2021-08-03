@@ -510,18 +510,19 @@ FREE SECTION
 .free-power-section{
     background: url('blogr-landing-page-main/images/illustration-laptop-desktop.svg') no-repeat top 120px right 650px;
     color: var(--clr-body-copy);
-    height: 160vh;
     width: 100%;
+    padding-bottom: 30rem;
 }
 
 
 .free-power-text{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding-left: 4rem;
     text-align: left;
     position: relative;
     left: 670px;
-    top: 220px
+    top: 220px;
 }
 
 
@@ -549,6 +550,14 @@ FOOTER SECTION
 ========================
 */
 footer{
+    background-color: var(--clr-footer-background);
+    height: 20rem;
+    border-top-right-radius: 80px;
+}
+footer div{
+    background-color: yellow;
+}
+footer div ul{
     background-color: red;
 }
 
@@ -701,9 +710,7 @@ footer{
     }
 
     /* Footer */
-    .footer-section{
-        flex-direction: column;
-    }
+    
     
     
     
