@@ -138,9 +138,10 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 2rem 0rem 0rem 2rem;
 }
 .logo{
-    padding-left: 4rem;
+    padding-left: 2rem;
 }
 .nav-links{
     display: flex;
@@ -178,13 +179,15 @@ nav{
     justify-content: space-between;
     
 }
-.nav-login-sign-section li{
-    /*padding-right: 4rem;*/
+.nav-login-sign-section #login{
+    margin: 0.5rem 4rem 0rem 0rem;
+
 }
 .nav-login-sign-section .sign-btn{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
     font-weight: 400;
+    margin-right: 4rem;
 }
 .nav-login-sign-section .sign-btn:hover{
     background-color: var(--clr-cta-hover-background);
