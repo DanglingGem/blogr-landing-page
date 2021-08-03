@@ -54,7 +54,11 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
-
+/*
+=================================
+TYPOGRAPHY FOR DESKTOP DEVICES
+=================================
+*/
 ul{
     list-style-type: none;
 }
@@ -109,7 +113,7 @@ button{
 
 /*
 =================================
-GLOBAL STYLES FOR MOBILE DEVICES
+TYPOGRAPHY FOR MOBILE DEVICES
 =================================
 */
 @media screen and (max-width: 375px){
@@ -152,8 +156,11 @@ header{
 
 }
 
-
-
+/*
+===============
+DESKTOP MENU 
+===============
+*/
 nav{ 
     width: 90%;
     height: 40px;
@@ -541,33 +548,14 @@ FREE SECTION
 FOOTER SECTION
 ========================
 */
-.footer-section{
-    background: var(--clr-footer-background);
-    border-top-right-radius: 80px;
-    color: var(--clr-footer-text);
-    display: flex;
-    flex-direction: row;
-    justify-content: ;
-    align-items: center;
-    width: 100%;
-}
-
-
-.footer-nav-section{
-    background: green;
-}
-
-
-.footer-links{
+footer{
     background-color: red;
-    display: flex;
-    flex-direction: column;
-    justify-content: ;
-}   
+}
 
-.footer-nav-list{
-    background-color: yellow;
-}  
+
+
+
+
 
 
 /* Media Query for Mobile Devices*/
