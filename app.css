@@ -49,7 +49,8 @@ body {
     color: var(--clr-text);
     line-height: 1.5;
     font-size: 1rem;
-    margin-bottom: 0.75rem;
+    width: 100%;
+    overflow-x: hidden;
 }
 ul{
     list-style-type: none;
@@ -126,26 +127,31 @@ REVIEWS
 header{
     background: url('blogr-landing-page-main/images/bg-pattern-intro.svg') no-repeat center center, linear-gradient(50deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-bottom-left-radius: 80px;
-    height: 80vh;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
 
-nav{
-    background: transparent; 
+nav{ 
+    width: 90%;
     height: 40px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 0rem 0rem 2rem;
+    padding-top: 2rem;
+    align-self: center;
 }
-.logo{
-    padding-left: 2rem;
-}
+
 .nav-links{
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
+    margin-left: -7rem;
+    margin-bottom: 0rem;
+
 }
 .nav-links a:hover{
     cursor: pointer;
@@ -153,6 +159,7 @@ nav{
 }
 .nav-links li{
     padding-right: 1.5rem;
+    
 }
 .link-arrow{
     transition: all 0.3s linear;
@@ -187,7 +194,7 @@ nav{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
     font-weight: 400;
-    margin-right: 4rem;
+   
 }
 .nav-login-sign-section .sign-btn:hover{
     background-color: var(--clr-cta-hover-background);
@@ -265,45 +272,52 @@ nav{
     color: #fff;
 }
 .info-section{
-    margin-top: 7rem;
+    margin-top: 10rem;
     text-align: center;
 }
+.info-section h1{
+    font-weight: 900;
+}
 .info-section p{
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-bottom: 3rem;
     letter-spacing: 1px;
     opacity: 0.8;
 }
-.info-section button{
+#cta-buttons{
     margin-bottom: 10rem;
+    text-align: center;
+
 }
-.info-section .start-btn{
+#cta-buttons .start-btn{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
 }
-.info-section .start-btn:hover{
+#cta-buttons .start-btn:hover{
     background-color: var(--clr-cta-hover-background);
     color: var(--clr-text);
     border-color: var(--clr-cta-hover-background);
 }
-.info-section .learn-btn{
+#cta-buttons .learn-btn{
     background-color: transparent;
     color: var(--clr-text);
 }
-.info-section .learn-btn:hover{
+#cta-buttons .learn-btn:hover{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
 }
 .intro-section{
     background: url('blogr-landing-page-main/images/illustration-editor-desktop.svg') no-repeat top 80px left 700px;
     color: var(--clr-body-copy);
+    width: 100%;
 }
 .intro-section h2{
     text-align: center;
     padding-top: 8rem;
 }
 .intro-text{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding-left: 4rem;
 }
 .intro-text div{
@@ -331,21 +345,21 @@ nav{
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px; ;
     display: flex;
+    width: 100%;
+    flex-direction: row;
     margin-top: 15rem;
-    height: 60vh;
+    height: 400px;
 }
 .state-section img{
-    padding-left: 4rem;
+    padding-left: 2rem;
     position: relative;
     bottom: 70px;
 }
 .state-section .state-text{
-    padding-left: 4rem;
     text-align: left;
+    width: 40%;
     color: var(--clr-text);
-    position: relative;
-    top: 120px;
-    width: 42%;
+    
 }
 .state-text h3{
     padding-bottom: 2rem;
@@ -353,11 +367,14 @@ nav{
 .state-text p{
     color: var(--clr-text);
     opacity: 70%;
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 .free-power-section{
     background: url('blogr-landing-page-main/images/illustration-laptop-desktop.svg') no-repeat top 120px right 650px;
     color: var(--clr-body-copy);
     height: 160vh;
+    width: 100%;
 }
 .free-power-text{
     display: grid;
@@ -383,16 +400,20 @@ nav{
 .footer-section{
     background: var(--clr-footer-background);
     border-top-right-radius: 80px;
-    height: 65vh;
-    padding-top: 3rem;
     color: var(--clr-footer-text);
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
 }
 .footer-nav-links{
     display: flex;
-    justify-content: stretch;
+    flex-direction: row;
+    justify-content: space-between;
     position: relative;
-    bottom: 33px;
-    left: 15rem;
+    right: 20rem;
+    
 }
 .footer-nav-links li{
     padding-left: 10rem;
@@ -415,20 +436,8 @@ nav{
 
 /* Media Query for Mobile Devices*/
 @media only screen and (max-width: 375px){
-    body{
-        width: 100%;
-        max-width: 375px;
-        margin: 0 auto;
-    }
-
-    /* Header */
-
-    .header{
-        height: 80vh;
-    }
-    .logo{
-        padding-left: 2rem;
-    }
+    
+    /* Nav */
     .nav-links{
         display: none;
     }
@@ -437,9 +446,7 @@ nav{
     }
     .nav-toggle{
         display: block;
-        position: relative;
-        bottom: 2.2rem;
-        left: 20rem;
+       
     }
     .mobile-active{
         transform: translate(0);
@@ -479,19 +486,22 @@ nav{
     }
     .intro-text div{
         text-align: center;
-        width: 90%;
+        width: 100%;
         padding-top: 0rem;
         padding-left: 0rem;
     }
     .intro-text h3{
         padding-bottom: 1rem;
-        padding-left: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
     }
     .intro-text p{
         text-align: center;
-        width: 40vh;
-        padding-left: 0rem;
-        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .intro-robust-section{
         margin-left: 0rem;
@@ -505,41 +515,33 @@ nav{
         border-bottom-left-radius: 80px;
         margin-top: 15rem;
         height: 80vh;
-        display: grid;
+        flex-direction: column;
     }
     .state-section img{
-        width: 120vw;
+        width: 100vw;
         padding-left: 4rem;
         position: relative;
         bottom: 12rem;
-        right: 4rem;
+        right: 2rem;
     }
     .state-section .state-text{
         padding-left: 0rem;
-        padding-right: 3rem;
-        text-align: center;
+        padding-right: 0rem;
+        position: relative;
+        bottom: 12rem;
+        left: 0rem;
+        
     }
     .state-text h2{
-        text-align: center;
-        padding-bottom: 1rem;
-        margin-left: 0rem;
-        margin-right: 10rem;
-        position: relative;
-        bottom: 25rem;
-        width: 50vh;
-        padding-left: 3rem;
-        padding-right: 5rem;
+        margin: 0rem 3rem 0rem 3rem;
+        padding: 0rem 3rem 0rem 3rem;
     }
     .state-text p{
-        color: var(--clr-text);
-        opacity: 70%;
-        width: 50vh;
-        position: relative;
-        bottom: 25rem;
-        padding-left: 3rem;
-        padding-right: 5rem;
-        text-align: center;
+        padding: 0rem 2rem 0rem 2rem;
+        margin: 0rem 1rem 0rem 1rem;
     }
+    
+   
 
     /* Free Power section */
     .free-power-section{
@@ -559,6 +561,8 @@ nav{
         width: 100%;
         padding-top: 4rem;
         padding-bottom: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
     .free-power-text h3{
         padding-bottom: 2rem;
@@ -568,44 +572,16 @@ nav{
         opacity: 70%;
         color: #202020;
         margin-left: 0rem; 
-        margin-right: 2rem;
+        margin-right: 0rem;
     }
 
     /* Footer */
     .footer-section{
-        background: var(--clr-footer-background);
-        border-top-right-radius: 80px;
-        height: 200vh;
-        display: grid;
-        padding-top: 3rem;
-        color: var(--clr-footer-text);
-        text-align: center;
+        flex-direction: column;
     }
-    .footer-section .logo{
-        padding-left: 0rem;
-    }
-    .footer-nav-links{
-        display: grid;
-        position: relative;
-        bottom: 6rem;
-        left: 1rem;
-    }
-    .footer-nav-links li{
-        padding-left: 0rem;
-        padding-top: 1rem;
-    }
-    .footer-product-links,
-    .footer-company-links,
-    .footer-connect-links{
-        padding-top: 0rem;
-    }
-    .footer-product-links li,
-    .footer-company-links li,
-    .footer-connect-links li{
-        padding-left: 0rem;
-        padding-bottom: 0rem;
     
-    }    
+    
+    
     
 
 
