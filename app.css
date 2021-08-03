@@ -17,14 +17,17 @@ VARIABLES
     --clr-cta-text: hsl(356, 100%, 66%);
     --clr-cta-hover-background: hsl(355, 100%, 74%);
     --clr-headings: hsl(208, 49%, 24%);
+    
     /* Neutral colors */
     --clr-text: hsl(0, 0%, 100%);
     --clr-footer-text: hsl(240, 2%, 79%);
     --clr-body-copy: hsl(207, 13%, 34%);
     --clr-footer-background: hsl(240, 10%, 16%);
+    
     /* Gradients for intro/CTA mobile nav */
     --clr-background-intro-1: hsl(13, 100%, 72%);
     --clr-background-intro-2: hsl(353, 100%, 62%);
+    
     /* Gradients for body */
     --clr-background-by-1: hsl(237, 17%, 21%);
     --clr-background-by-2:hsl(237, 23%, 32%);
@@ -37,13 +40,12 @@ GLOBAL STYLES
 =======================
 */
 
-*,
-::after,
-::before {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: var(--ff-body);
     color: var(--clr-text);
@@ -52,40 +54,50 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+
 ul{
     list-style-type: none;
 }
+
 a{
     text-decoration: none;
     color: var(--clr-text);
 }
+
 a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+
 h1,
 h2,
 h3{
     line-height: 1.25;
     font-family: var(--ff-heading);
 }
+
+
 p{
     font-size: 16px;
+    font-family: var(--ff-body);
+    margin-bottom: 1.25rem;
 }
+
 h1{
     font-size: 3rem;
     font-weight: 300;
 }
+
 h2{
     font-size: 2rem;
 }
+
 h3{
     font-size: 1.8rem;
 }
-p{
-    font-family: var(--ff-body);
-    margin-bottom: 1.25rem;
-}
+
+
+
 button{
     width: 120px;
     height: 40px;
@@ -94,6 +106,12 @@ button{
     border-style: solid;
     border-color: var(--clr-text);
 }
+
+/*
+=================================
+GLOBAL STYLES FOR MOBILE DEVICES
+=================================
+*/
 @media screen and (max-width: 375px){
     h1{
         font-size: 2.1rem;
@@ -146,6 +164,8 @@ nav{
     align-self: center;
 }
 
+
+
 .nav-links{
     display: flex;
     justify-content: space-between;
@@ -153,18 +173,27 @@ nav{
     margin-bottom: 0rem;
 
 }
+
+
 .nav-links a:hover{
     cursor: pointer;
     text-decoration: underline;
+
 }
+
+
 .nav-links li{
     padding-right: 1.5rem;
     
 }
+
+
 .link-arrow{
     transition: all 0.3s linear;
     transform: translate(-100%);
 }
+
+
 .dropdown{
     background: var(--clr-text);
     transition: all 0.3s linear;
@@ -174,9 +203,12 @@ nav{
     box-shadow: 0 5px 15px #fa6c75;
     /*display: none;*/
 }
+
+
 .dropdown a{
     color: var(--clr-footer-background);
 }
+
 .show-link{
     height: 3rem;
 }
@@ -186,16 +218,22 @@ nav{
     justify-content: space-between;
     
 }
+
+
 .nav-login-sign-section #login{
     margin: 0.5rem 4rem 0rem 0rem;
 
 }
+
+
 .nav-login-sign-section .sign-btn{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
     font-weight: 400;
    
 }
+
+
 .nav-login-sign-section .sign-btn:hover{
     background-color: var(--clr-cta-hover-background);
     color: var(--clr-text);
@@ -204,6 +242,12 @@ nav{
 .nav-toggle{
     display: none
 }
+
+/*
+================================
+MOBILE MENU (Display is hidden)
+================================
+*/
 .mobile-menu{
     background-color: #fff;
     position: absolute;
@@ -219,34 +263,53 @@ nav{
     z-index: 3;
     box-shadow: 10px 20px 30px hsl(356, 69%, 40%);
 }
+
+
 .mobile-menu a{
     color: #25252d;
     display: block;
     position: relative;
     transition: all 300m ease-in-out;
 }
+
+
 .mobile-menu a:hover{
     font-weight: bold;
 }
+
+
 .mobile-menu ul{
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
+
+
 .mobile-menu .menu-item{
     margin-bottom: 2.62rem;
 }
+
+
 .mobile-menu .menu-item img{
     position: absolute;
     right: 100px;
     top: 6px;
+
 }
+
+
+
 .mobile-menu .menu-item:hover .submenu{
     max-height: 18.75rem;
 }
+
+
 .mobile-menu .menu-item:hover img{
     transform: rotate(180deg);
 }
+
+
 .mobile-menu .submenu{
     margin-top: 1.6rem;
     margin-bottom: 1.6rem;
@@ -255,91 +318,144 @@ nav{
     max-height: 0;
     overflow: hidden;
     transition: max-height 300m ease-in-out
+
 }
+
+
 .mobile-menu .submenu .submenu-item{
     margin-top: 1.875rem;
     margin-bottom: 1.875rem;
 }
+
+
 .mobile-menu{
     border-color: #c8c8cb;
 }
+
+
 .mobile-menu .menu-login{
     margin-top: 2.3125rem;
     margin-bottom: 1.75rem;
 }
+
 .mobile-menu .sign-btn{
     background: linear-gradient(to  right, #ff8f70, #ff3d54);
     color: #fff;
 }
+
+/*
+========================
+CTA SECTION
+========================
+*/
 .info-section{
     margin-top: 10rem;
     text-align: center;
 }
+
+
 .info-section h1{
     font-weight: 900;
 }
+
+
 .info-section p{
     margin-top: 0.5rem;
     margin-bottom: 3rem;
     letter-spacing: 1px;
     opacity: 0.8;
 }
+
+
+
 #cta-buttons{
     margin-bottom: 10rem;
     text-align: center;
 
 }
+
+
 #cta-buttons .start-btn{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
 }
+
+
 #cta-buttons .start-btn:hover{
     background-color: var(--clr-cta-hover-background);
     color: var(--clr-text);
     border-color: var(--clr-cta-hover-background);
 }
+
+
 #cta-buttons .learn-btn{
     background-color: transparent;
     color: var(--clr-text);
 }
+
+
 #cta-buttons .learn-btn:hover{
     background-color: var(--clr-text);
     color: var(--clr-cta-text);
 }
+
+/*
+========================
+INTRO SECTION
+========================
+*/
 .intro-section{
     background: url('blogr-landing-page-main/images/illustration-editor-desktop.svg') no-repeat top 80px left 700px;
     color: var(--clr-body-copy);
     width: 100%;
 }
+
+
 .intro-section h2{
     text-align: center;
     padding-top: 8rem;
 }
+
+
 .intro-text{
     display: flex;
     flex-direction: column;
     padding-left: 4rem;
 }
+
+
 .intro-text div{
     width: 40%;
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
+
+
 .intro-text h3{
     padding-bottom: 2rem;
 }
+
+
 .intro-section p{
     text-align: left;
     line-height: 2;
     opacity: 75%;
     color: #000000; 
 }
+
+
 .intro-text img{
     width: 70%;
     position: relative;
     bottom: 120px;
     right: 120px;
 }
+
+/*
+========================
+STAY SECTION
+========================
+*/
 .state-section{
     background: url('blogr-landing-page-main/images/bg-pattern-circles.svg') no-repeat bottom 80px right 600px, hsl(208, 49%, 24%);
     border-top-right-radius: 80px;
@@ -350,32 +466,48 @@ nav{
     margin-top: 15rem;
     height: 400px;
 }
+
+
 .state-section img{
     padding-left: 2rem;
     position: relative;
     bottom: 70px;
 }
+
+
 .state-section .state-text{
     text-align: left;
     width: 40%;
     color: var(--clr-text);
     
 }
+
+
 .state-text h3{
     padding-bottom: 2rem;
 }
+
+
 .state-text p{
     color: var(--clr-text);
     opacity: 70%;
     margin-left: 4rem;
     margin-right: 4rem;
 }
+
+/*
+========================
+FREE SECTION
+========================
+*/
 .free-power-section{
     background: url('blogr-landing-page-main/images/illustration-laptop-desktop.svg') no-repeat top 120px right 650px;
     color: var(--clr-body-copy);
     height: 160vh;
     width: 100%;
 }
+
+
 .free-power-text{
     display: grid;
     padding-left: 4rem;
@@ -384,57 +516,62 @@ nav{
     left: 670px;
     top: 220px
 }
+
+
 .free-power-text div{
     width: 40%;
     padding-top: 4rem;
     padding-bottom: 2rem;
 }
+
+
 .free-power-text h3{
     padding-bottom: 2rem;
 }
+
+
 .free-power-text p{
     line-height: 2;
     opacity: 70%;
     color: #202020; 
 }
+
+/*
+========================
+FOOTER SECTION
+========================
+*/
 .footer-section{
     background: var(--clr-footer-background);
     border-top-right-radius: 80px;
     color: var(--clr-footer-text);
-    height: 400px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: ;
+    align-items: center;
     width: 100%;
 }
-.footer-nav-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    right: 20rem;
-    
-}
-.footer-nav-links li{
-    padding-left: 10rem;
-}
-.footer-nav-links a{
-    margin-bottom: 5rem;
-}
-.footer-product-links,
-.footer-company-links,
-.footer-connect-links{
-    padding-top: 3rem;
-}
-.footer-product-links li,
-.footer-company-links li,
-.footer-connect-links li{
-    padding-left: 0rem;
-    padding-bottom: 1rem;
-    opacity: 60%;
+
+
+.footer-nav-section{
+    background: green;
 }
 
+
+.footer-links{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}   
+
+.footer-nav-list{
+    background-color: yellow;
+}  
+
+
 /* Media Query for Mobile Devices*/
+
 @media only screen and (max-width: 375px){
     
     /* Nav */
