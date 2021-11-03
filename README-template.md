@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [View solution URL here](https://github.com/DanglingGem/blogr-landing-page.git)
-- Live Site URL: [View live site URL here]( https://danglinggem.github.io/blogr-landing-page/)
+- Live Site URL: [View live site URL here](https://danglinggem.github.io/blogr-landing-page/)
 
 ## My process
 
